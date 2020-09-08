@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="List.Master.cs" Inherits="WebApplication3.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>服務學習</title>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+			<meta name="description" content="" />
+			<meta name="keywords" content="" />
+			<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+			<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/skel-panels.min.js"></script>
+			<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+            <link rel="stylesheet" href="css/style-mobile.css" />
+            <link rel="stylesheet" href="css/style-1000px.css" />
+		</noscript>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+<!-- Header -->
+		<div id="header-wrapper">
+		
+        	<div id="header" class="container">
+            
+            	<div id="logo"><h1><a href="#">服務學習</a></h1></div>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.aspx">主頁</a></li>
+                            <li class="current_page_item"><a href="List.aspx">機構名單</a></li>
+                            <li><a href="twocolumn2.html">新增/修改</a></li>
+                            <li><a href="onecolumn.html">查詢/列印</a></li>
+                        </ul>
+                    </nav>                
+                </div>
+
+		</div>
+		<!-- Header Ends Here -->
+        <div>
+        	<div >
+		
+        <div class="container">
+                    <nav >
+                        <ul>
+                         <%--    <li class="current_page_item"><a href="#">兒童福利</a></li>
+                            <li><a href="#">長者關懷</a></li>
+                            <li><a href="#">社會福利</a></li>
+                            <li><a href="#">其他服務</a></li>--%>
+                        </ul>
+                    </nav>                
+                </div>
+		</div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+		<!-- Copyright -->
+            <div id="copyright" class="container">
+                Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+            </div>
+
+    </form>
+</body>
+</html>
